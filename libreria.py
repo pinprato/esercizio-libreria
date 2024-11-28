@@ -8,16 +8,19 @@ Disponibilità libro
 Libri disponibili nella libreria
 Libri dati in prestito
 """
+# Importazione del file libro.py per le funzioni da utilizzare
+from libro import * 
 
-from libro import *
-
+#lista vuote di libreria e libri dati in prestito
 library = []
 lend_books = []
+
 
 def main():
     
     print("Gestionale libreria")
-    
+    # Il menù viene visualizzato all'inizio del programma ed ogni volta che una scelta è stata completata,
+    # finché riceve da input il numero 7
     while True:
         print("\nScegliere tra le seguenti opzioni:")
         print("1. Aggiungi libro")
